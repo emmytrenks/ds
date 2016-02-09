@@ -18,7 +18,10 @@ public:
     if (count >= size) return false;
     //Insert the element at start + count, mod size
     //We mod by size to wrap around once our start beings to move forward
-    array[(start + count++) % size] = t;
+    //array[(start + count++) % size] = t;
+    array[(start) % size] = t;
+    count++; 
+
     //Count is incremented by one above
     return true;
   }
