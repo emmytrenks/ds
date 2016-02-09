@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gatesyp/GitHub/ds/aqueue.hpp
+
+/home/gatesyp/GitHub/ds/proj-1.cpp
+iostream
+-
+aqueue.hpp
+/home/gatesyp/GitHub/ds/aqueue.hpp
+
