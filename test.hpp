@@ -13,8 +13,9 @@ void testResizeEasy(){}
 
 // test resizing in different circumstances
 // ex: resize once, dequeue, then resize again
-
+// acts as a helper function
 template<typename T>
 voidTestResizeHard(Aqueue<T> q){}
+
 
 #endif
