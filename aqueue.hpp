@@ -19,8 +19,8 @@ public:
     //Insert the element at start + count, mod size
     //We mod by size to wrap around once our start beings to move forward
     //array[(start + count++) % size] = t;
-    array[(start) % size] = t;
-    count++; 
+    array[(start + count) % size] = t;
+    count++;
 
     //Count is incremented by one above
     return true;
@@ -42,7 +42,15 @@ public:
 
   bool empty() { return count == 0; }
 
-private:
+  T operator[](int n) const {
+      return (array[n]);
+  }
+
+  T &operator[](int n) {
+      return (array[n]);
+  }
+
+public:
   int size;
   int start;
   int count;
